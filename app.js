@@ -184,6 +184,12 @@ function searchIngredients(allDishes) {
 function generateCuisineDishName(allDishes) {
     alert("Combining cuisine and dish names...")
     // TODO #5: Apply the concatenatorFunction to each dish in allDishes, then log to the console the modified result
+    let cuisineDishNameArray = dishes.map(
+        function(allDishes){
+            return allDishes.cuisine + " " + allDishes.name
+        }
+    );
+    console.log(cuisineDishNameArray);
     alert("Successfully combined cuisine and dish names!  Check the console for full output.")
 }
 
@@ -197,7 +203,7 @@ function emailMessage(dishOfTheDay) {
     Thank you for subscribing to email alert messages!
     Today's Dish of the day is:
 
-    <DISH OF THE DAY HERE>
+    <DISH OF THE DAY HERE> 
 
     We hope to see you in soon!
 
