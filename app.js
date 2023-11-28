@@ -158,7 +158,7 @@ function findItalianFood(allDishes) {
 function searchCuisines(allDishes) {
     alert("Searching for dishes by cuisine...")
     // TODO #3: Gather user input for a cuisine to search for, then filter for all dishes matching this cuisine type
-    let userInput = prompt("Please choose between: Italian, Mexican, French, Irish, Vegetarian or Hungarian");
+    let userInput = prompt("Please choose between: Italian, Mexican, French, Irish, Vegetarian or Hungarian.");
     let results = allDishes.filter(function(el) {
         if (el.cuisine.includes(userInput)) {
             return true;
@@ -171,7 +171,14 @@ function searchCuisines(allDishes) {
 function searchIngredients(allDishes) {
     alert("Searching for dishes by ingredient...")
     // TODO #4: Gather user input for an ingredient to search for, then filter for all dishes that INCLUDE this ingredient in their ingredients array property
+    let userInput = prompt("Please choose between: tomato, cheese, corn, flour, sugar, beef, cabbage, chickpea or parsley.");
+    let results = allDishes.filter(function(el) {
+        if (el.ingredients.includes(userInput)) {
+            return true;
+        }
+    });
     alert("Found all dishes that contain the ingredient search term!  Check the console for full output")
+    return results
 }
 
 function generateCuisineDishName(allDishes) {
