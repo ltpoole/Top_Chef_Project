@@ -203,7 +203,7 @@ function emailMessage(dishOfTheDay) {
     Thank you for subscribing to email alert messages!
     Today's Dish of the day is:
 
-    ${console.log(todaysSpecialDish)}
+    ${dishOfTheDay.cuisine} ${dishOfTheDay.name}
 
     We hope to see you in soon!
 
@@ -224,7 +224,7 @@ function textMessage(dishOfTheDay) {
     This is an automated text message alert.
     Today's Dish of the day is:
 
-    ${console.log(todaysSpecialDish)}
+    ${dishOfTheDay.cuisine} ${dishOfTheDay.name}
 
     We hope to see you in soon!
 
